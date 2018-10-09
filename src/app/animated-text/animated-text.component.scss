@@ -1,0 +1,39 @@
+@keyframes moves-in-left1 {
+    0% { opacity: -5; transform: translateX(-10rem); }
+    50% { opacity: 1; transform: translate(0); }
+    100% { opacity: 2; transform: translate(0); }
+}
+
+@keyframes moves-in-left2 {
+    0% { opacity: 0; transform: translate(-10rem); }
+    50% { opacity: 0; transform: translate(0); }
+    100% { opacity: 1; transform: translate(0); }
+}
+
+.container {
+    font-size: 6rem;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+
+    .first-name {
+        display: block;
+        animation-name: moves-in-left1;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        opacity: 1;
+        color: blue;
+    }
+    
+    .last-name {
+        display: block;
+        animation-name: moves-in-left2;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        opacity: 1;
+        color: blue;
+    }
+}
+
+

@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SimpleAnimationComponent } from './simple-animation/simple-animation.component';
+import { AnimatedTextComponent } from './animated-text/animated-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleAnimationComponent
+    SimpleAnimationComponent,
+    AnimatedTextComponent
   ],
   imports: [
     BrowserModule,
