@@ -1,0 +1,65 @@
+.space {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    .earth {
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+    
+        img {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+        }
+    }
+
+    .moon-container {
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+
+        .moon {
+            height: 50px;
+            width: 50px;
+            background: none;
+            pointer-events: none;
+            transform-origin: 25px;
+            animation: spin 20s linear infinite;
+
+            img {
+                transform: translateX(-160px) translateY(-160px);
+                width: 50px;
+                border-radius: 50%;
+                box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+            }
+        }
+    }
+}
+
+.space::before {
+    background-size: cover;
+    background: url(https://cssanimation.rocks/images/random/space2.jpg) repeat center;
+    content: "";
+    opacity: .5;
+    position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+}
+
+@keyframes spin {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
